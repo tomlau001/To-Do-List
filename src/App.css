@@ -1,0 +1,168 @@
+body {
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #CAD2C5;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  margin: 0 auto;
+  /* padding: 50px; */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+input {
+  background-color: #B6C9BB;
+  color: #2F3E46;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-right: 1rem;
+  background-color: #B6C9BB;
+  border-radius: 5px;
+
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #52796F;
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #609b8c;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  padding: 0.5rem;
+  margin: 10px auto;
+  background-color: #84A98C;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.35rem;
+  color: #2F3E46;
+}
+
+.todo-item {
+  max-width: 45%;
+}
+
+/* Add a bold and eye-catching heading */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Incorporate images and graphics */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Create contrast with bright colors */
+button {
+  background-color: #2F3E46;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li > button:hover {
+  background-color: #2f4c5c;
+  color: #DF3B57;
+}
+
+/* Add subtle animations */
+a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  li {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  button {
+    font-size :12px;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 767px) {
+  input[type="text"] {
+    width: 80%;
+  }
+  button {
+    font-size : 8px;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  li {
+    font-size: 1rem;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+}
